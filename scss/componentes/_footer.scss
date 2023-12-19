@@ -1,0 +1,32 @@
+footer {
+    gap: 16px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: $color-primary;
+    text-decoration: none;
+    flex-wrap: wrap;
+    font-size: $font-xs;
+    margin-top: auto;
+    
+
+    .copy {
+        font-family: $font-sans;
+        color: $color-primary;
+
+        &:hover {
+            color: $color-secondary-hover;
+        }
+    }
+
+    .redes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70px;
+        gap: 16px;
+
+    }
+        
+    }
+    

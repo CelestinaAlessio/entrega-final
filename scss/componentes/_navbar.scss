@@ -1,0 +1,99 @@
+.navbar {
+        gap: 16px;
+        height: 64px;
+        width: min(1200px, 100%);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $color-primary;
+        position: relative;
+        background-color: $body-bg-color;
+        
+    
+        &-brand {
+            height: 32px;
+        }
+    
+        &-items {
+            gap: 16px;
+        }
+        
+}
+.ul-link{
+    width: 100%;
+    position: absolute;
+    top: 64px;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    flex-direction: column;
+    padding-right: 40px;
+    transition: all .3s;
+
+    
+}
+
+li{
+    list-style: none;
+}
+.list-icon{
+    color: $color-primary;
+    cursor: pointer;
+}
+
+.menu-hambur:checked + .ul-link{
+    height: calc(100vh - 64px);
+}
+
+.tipo {
+    color: $color-primary;
+    font-size: var(--#{$prefix}-font-size-base, $font-md);
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $body-bg-color;
+    padding: 5px;
+    width: fit-content;
+
+    &:hover {
+        font-weight: $font-bold;
+        color: $color-primary-hover;
+    }
+}
+
+.tipo-activo{
+    color: $color-primary;
+    font-size: var(--#{$prefix}-font-size-base, $font-md);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    color: $color-secondary;
+    background-color: $body-bg-color;
+    padding: 4px;
+    width: fit-content;
+}
+
+
+.menu-hambur{
+display: none;
+}
+
+@media (min-width:768px){
+    .labe-hambur{
+        display: none;
+    }
+    .ul-link{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 1rem;
+        padding-right: 0;
+    }
+}
+
+
+

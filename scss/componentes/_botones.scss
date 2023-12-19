@@ -1,0 +1,45 @@
+.boton {
+    --#{prefix}-btn-bg: #{$color-blue-600};
+    --#{prefix}-btn-color: #{$color-slate-50};
+    --#{prefix}-btn-border-color: transparent;
+    --#{prefix}-btn-hover-bg: #{$color-blue-300};
+    --#{prefix}-btn-hover-color: #{$color-blue-50};
+
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 8px 8px;
+    display: inline-flex;
+    outline: 0;
+    font-size: $font-xs;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    font-weight: $font-normal;
+    letter-spacing: 1px;
+    user-select: none;
+    text-decoration: none;
+
+    color: var(--#{prefix}-btn-color);
+    border-color: var(--#{prefix}-btn-border-color);
+    border-radius: 4px;
+    background-color: var(--#{prefix}-btn-bg);
+
+    &:hover {
+        color: $color-blue-50;
+        background-color: $color-blue-500;
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 1px $color-focus;
+    }
+
+    &:active {
+        transform: scale3d(.95, .95, 1);
+    }
+
+    &:disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}

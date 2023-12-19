@@ -1,0 +1,35 @@
+//variables
+@import "variables";
+@import "mixins";
+//base
+@import "base/base";
+@import "base/tipografia";
+@import "base/utils";
+//componentes
+@import "componentes/formulario";
+@import "componentes/sobre";
+@import "componentes/footer";
+@import "componentes/botones";
+@import "componentes/vertical";
+@import "componentes/tarjeta";
+@import "componentes/links";
+@import "componentes/navbar";
+@import "componentes/inicio";
+
+
+//layout
+@import "layouts/layouts";
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}

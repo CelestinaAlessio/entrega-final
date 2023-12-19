@@ -1,0 +1,42 @@
+$header-bg-color: var(--#{$prefix}-header-bg-color, $color-slate-50);
+
+$footer-bg-color: var(--#{$prefix}-header-bg-color, $color-slate-50);
+$footer-text-color: var(--#{$prefix}-header-bg-color, $color-slate-900);
+
+.base {
+    &-layouts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-header {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9000;
+        position: fixed;
+        background-color: $header-bg-color;
+    }
+
+    &-content {
+        flex: 1;
+        position: relative;
+        margin-top: 64px;
+    }
+
+    &-footer {
+        padding: 32px 16px;
+        font-size: $font-sm;
+        font-weight: $font-medium;
+        text-align: center;
+        background-color: $footer-bg-color;
+
+        p {
+            color: $footer-text-color;
+        }
+    }
+}
+
+.base-section{
+    padding-top: 64px;
+}

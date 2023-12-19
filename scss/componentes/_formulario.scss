@@ -1,0 +1,54 @@
+article {
+    width: 100%;
+    align-items: center;
+    margin: 0 20%;
+    
+
+    form {
+        margin-left: 5%;
+        margin-right: 5%;
+
+        fieldset {
+            font-family: 'Lato', sans-serif;
+            font-size: $font-sm;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 0px;
+
+            div {
+                text-align: left;
+                margin-top: 10px;
+
+                input {
+                    background-color: $body-bg-color;
+                    font-family: $font-primary;
+                    border-top: 0px;
+                    border-left: 0px;
+                    border-right: 0px;
+                    border-width: 1px;
+                    /* width: 100%; */
+                    text-align: left;
+                }
+                
+
+                label {
+                    color: $color-primary;
+                }
+                textarea {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.txt {
+    
+    color: $color-slate-300;
+    font-family: $font-primary;
+    font-size: xx-small;
+}
+
+
+
+
+

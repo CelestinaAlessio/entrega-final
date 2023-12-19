@@ -1,0 +1,7 @@
+
+@mixin flex-be-ro-wr{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
